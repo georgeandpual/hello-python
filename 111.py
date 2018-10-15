@@ -2,10 +2,10 @@ import hashlib
 
 
 
-def make_md5(passworwd):
+def make_md5(password):
     md5=hashlib.md5
-    md5.update(passworwd.encode('utf-8'))
+    md5.update(password.encode('utf-8'))
 
     return md5.hexdigest()
 
-make_md5(123456)
+
